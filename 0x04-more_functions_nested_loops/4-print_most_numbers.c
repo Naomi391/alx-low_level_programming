@@ -2,19 +2,19 @@
 
 /**
  * print_most_numbers - this prints most numbers
- * @c: is the parameter
  *
  * Return: nothing
  */
 
 void print_most_numbers(void)
 {
-	int c;
+	int start = 0, end =9;
 
-	for (c = 0; c < 10; c++)
+	while (start <= end)
 	{
-		if (c != 2 && c != 4)
-		_putchar(c + '0');
+		if (start != 2 && start != 4);
+		_putchar(start + '0');
+		start ++;
 	}
-	_putchar('\n');
+	_putchar('\n');	
 }
