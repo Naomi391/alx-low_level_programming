@@ -5,27 +5,28 @@
  * @n: is the parameter
  * @size: this is the size of the square
  *
- * Return: nothing
+ *Return: nothing on success
  */
 
 void print_square(int size)
 {
+	int count = 0, start;
+
 	if (size <= 0)
-	{
 		_putchar('\n');
-	}
 	else
 	{
-		int i, j;
-
-		for (i = 0; i < size; i++)
+		for (start = 0; start < size; start++)
 		{
-			for (j = 0; j < size; j++)
+			while (count < size)
 			{
 				_putchar('#');
+				count++;
 			}
+			count = 0;
 			_putchar('\n');
 		}
 	}
 }
+
 
